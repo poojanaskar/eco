@@ -1,0 +1,28 @@
+<div class="product-detail" *ngIf="product; else noData">
+  <h2>{{ product.name }}</h2>
+
+  <div class="product-card">
+    <img src="AceLeaXtntKw1AZf.png"  alt="{{ product.name }}" width="300" height="300">
+
+    <div class="product-info">
+      <p><strong>Category:</strong> {{ product.category }}</p>
+      <p><strong>Brand:</strong> {{ product.brand }}</p>
+      <p><strong>Description:</strong> {{ product.description }}</p>
+      <p><strong>Price:</strong> ${{ product.price }}</p>
+      <p><strong>Discount:</strong> {{ product.discount }}%</p>
+      <p><strong>Unit:</strong> {{ product.unit }}</p>
+      <p><strong>Availability:</strong> 
+        <span [class.available]="product.availability" [class.unavailable]="!product.availability">
+          {{ product.availability ? 'In Stock' : 'Out of Stock' }}
+        </span>
+      </p>
+      <button class="add-to-cart" (click)="addToCart(product)" [routerLink]="['/cart']">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<ng-template #noData>
+  <p>Product not found.</p>
+</ng-template>

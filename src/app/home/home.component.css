@@ -1,0 +1,136 @@
+* {
+              padding: 0px;
+              margin: 0px;
+              box-sizing: border-box;
+}
+
+nav {
+              display: flex;
+              justify-content: space-between;
+              background-color: rgb(250, 246, 246);
+              width: 100%;
+              /* border-bottom:1px solid  rgb(212, 212, 214); */
+              .logo {
+                          
+
+                            img { width: 70px; 
+                                height: 70px;
+                                          /* text-align: center; */
+                            }
+              }
+
+              .navList {
+                            width: 60%;
+
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            a{
+                                text-decoration: none;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+              }
+
+              .sign {
+                            width: 20%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            a{
+                                text-decoration: none;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+              }
+}
+
+.containerOne {
+              margin-top: 2rem;
+              display: flex;
+              justify-content: center;
+
+              .banner {
+                            width: 100%;
+                            max-width: 1200px;
+                            background-color: #fce9e9;
+                            border-radius: 15px;
+                            -webkit-border-radius: 15px;
+                            -moz-border-radius: 15px;
+                            -ms-border-radius: 15px;
+                            -o-border-radius: 15px;
+
+                            h1 {
+                                          text-align: center;
+                                          padding: 1rem;
+                                          font-size: 28px;
+                            }
+
+                            .contetMain {
+
+                                          width: 100%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+
+                                          .content {
+                                                        /* background-color: red; */
+                                                        width: 80%;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+
+                                                        .contentText {
+                                                                      width: 50%;
+
+position: relative;
+height: 280px;
+                                                                      h3 {position: absolute;
+                                                                                    top: 48px;
+                                                                                    left: 6%;
+                                                                                    font-weight: 900;
+                                                                                    font-size: 34px;
+                                                                                    padding: 1rem;
+                                                                                    text-align: center;
+                                                                                    color: green;
+                                                                      }
+
+                                                                      h4 {
+                                                                                    position: absolute;
+                                                                                    top: 100px;
+                                                                                    text-align: center;
+                                                                                    font-size: 24px;
+                                                                                    padding-top: 10px;
+                                                                                    
+                                                                      }
+                                                                      button{
+                                                                                    position: absolute;
+                                                                                    bottom: 88px;
+                                                                                    left: 20%;
+                                                                             background-color: #a2c030;
+                                                                             color: white;
+                                                                             width: 100px;
+                                                                             padding: 8px;
+                                                                             border-radius: 10px;
+                                                                             -webkit-border-radius: 10px;
+                                                                             -moz-border-radius: 10px;
+                                                                             -ms-border-radius: 10px;
+                                                                             -o-border-radius: 10px;
+                                                                              border-color: #a2c030;
+}
+                                                        }
+
+                                                        .contentImg {
+                                                            img{
+                                                                      width: 100%;
+                                                                      max-width: 400px;
+                                                            }          
+                                                        }
+
+                                          }
+                            }
+
+              }
+}

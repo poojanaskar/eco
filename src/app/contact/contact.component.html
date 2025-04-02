@@ -1,0 +1,66 @@
+<p>contact works!</p>
+<ng-container>
+
+<div class="contact">
+
+              <div class="call">
+
+                   <h3>Call Us Now   <br>
+                            <p>8482842884</p> 
+                   </h3> 
+                 
+                   <p>We're here to answer the smallest question,
+                            or plan the largest holiday. Calls answered
+                            by a human within 2 minutes</p> 
+                            <p>Lines open today 9am-8pm</p>    
+                            
+                            <div class="orLine"> <div class="line">
+
+                            </div>
+                            <div class="or"></div>
+                            <div class="line">
+
+                            </div></div>
+                            <div class="request">
+                                          <h3>Request a Call back</h3>
+
+                                          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                                                        <!-- First Name Input -->
+                                                        <label for="fname">First Name</label>
+                                                        <input type="text" id="fname" formControlName="fname" required>
+                                                      
+                                                        <!-- Last Name Input -->
+                                                        <label for="lname">Last Name</label>
+                                                        <input type="text" id="lname" formControlName="lname" required>
+                                                      
+                                                        <!-- Contact Number Input -->
+                                                        <label for="no">Contact No</label>
+                                                        <input type="number" id="no" formControlName="no" required>
+                                                      
+                                                        <!-- Gender Radio Buttons -->
+                                                        <label>
+                                                          <input type="radio" formControlName="gender" value="male"> Male
+                                                        </label>
+                                                      
+                                                        <label>
+                                                          <input type="radio" formControlName="gender" value="female"> Female
+                                                        </label>
+                                                      
+                                                        <label>
+                                                          <input type="radio" formControlName="gender" value="other"> Other
+                                                        </label>
+                                                      
+                                                        <!-- Bio Textarea -->
+                                                        <label for="bio">Bio</label>
+                                                        <textarea id="bio" formControlName="bio" placeholder="Bio"></textarea>
+                                                      
+                                                        <!-- Submit Button -->
+                                                        <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+                                                      </form>
+                                                        
+                            </div>
+                           
+              </div>
+             
+</div>
+</ng-container>

@@ -1,0 +1,31 @@
+/* Container styling */
+.products{
+              h2{
+                            text-align: center;
+                            color: green;
+                            font-size: 30px;
+              }
+}
+.product-container {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);  /* 3 cards per row */
+              gap: 20px;
+              padding: 20px;
+            }
+            
+            /* Card styling */
+            .product-card {
+              background-color: #faf4fa;
+              border: 1px solid gray;
+              border-radius: 15px;
+              padding: 15px;
+              text-align: center;
+              transition: transform 0.3s;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Hover effect */
+            .product-card:hover {
+              transform: scale(1.05);
+            }
+            
